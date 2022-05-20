@@ -1,0 +1,165 @@
+@font-face {
+    font-family: Avenir LT Pro;
+    src: url(fonts/AvenirLTProBlack.otf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Avenir LT Pro;
+    src: url(fonts/AvenirLTProHeavy.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Avenir LT Pro;
+    src: url(fonts/AvenirLTProLight.otf);
+    font-weight: lighter;
+}
+/* Global */
+html{
+    font-family: 'Avenir LT Pro', Helvetica, sans-serif;
+}
+body{
+    padding: 0 6em;
+    margin: 0;
+}
+
+a{
+    color: black;
+    transition: all 1s ease-in-out;
+    margin: 0 1em 0 0;
+}
+a:hover{
+    background-color: #3EEBBE;
+    text-decoration-color: transparent;
+    -webkit-text-decoration-color: transparent;
+    -moz-text-decoration-color: transparent;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+h4{
+    font-size: 1.3rem;
+}
+
+/*Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* Sections */
+section{
+    margin-bottom: 64px;
+}
+/* Header */
+h1{
+    font-size: 3rem;
+}
+
+/* Content */
+section > header{
+    margin-bottom: 16px;
+}
+.content-items{
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.item-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.item-header h4, p{
+    margin: 0;
+}
+
+.item-description{
+    margin-bottom: 24px;
+}
+
+.item-links{
+    display: flex;
+    
+}
+.item-links a{
+    font-weight: 400;
+}
+
+/* content image */
+.content-items img{
+    max-width: 50%;
+    transition: all 1s ease-in-out; 
+}
+
+.content-items img:hover{
+    box-shadow: 3px 8px 10px -5px rgba(0,0,0,0.4); 
+}
+
+/* Artwork */
+.slider-arrow-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slider-arrow-container > a {
+    cursor: pointer;
+    margin: 0 1em;
+}
+
+
+.slider-container{
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+
+.slider-container::-webkit-scrollbar{
+    display: none;
+}
+.slide-card{
+    max-height: 400px;
+    border: 1px solid #F3F3F3; 
+    display: none;
+}
+
+
+.slide-card img{
+    max-height: 16.5em ;
+    transition: all ease-in-out 1s;
+}
+.slide-card img:hover{
+    box-shadow: -2px 1px 12px 0px rgba(0,0,0,0.4);
+}
+
+/* Footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+footer h4{
+    margin: .2em;
+}
+
+footer > div{
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+}
